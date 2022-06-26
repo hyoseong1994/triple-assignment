@@ -28,7 +28,11 @@ yarn install
 yarn start
 ```
 
-최종 스크린샷
+# 최종 스크린샷
+
+![Screenshot](image/screenshot.gif)
+
+<!-- ![screenshot](https://user-images.githubusercontent.com/50227228/175811791-4324bfd5-0d88-4d68-8332-f28cb3c77834.gif) -->
 
 # 사용한 기술과 선택한 이유
 
