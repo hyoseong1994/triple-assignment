@@ -1,6 +1,6 @@
 import "./Awards.css";
-import Amount from "./Amount";
-import Content from "./Content";
+import Amount from "../components/Amount";
+import Content from "../components/Content";
 
 function Awards() {
   const amountArray = [

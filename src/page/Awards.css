@@ -19,7 +19,7 @@
   width: 400px;
   padding-top: 280px;
   margin-right: 223px;
-  background-image: url("./assert/triple2x.png");
+  background-image: url("../assert/triple2x.png");
   background-size: 400px 338px;
   background-position: left top;
   background-repeat: no-repeat;
@@ -56,18 +56,17 @@
   display: inline-block;
   color: rgb(58, 58, 58, 0.8);
   font-weight: 600;
-  background-image: url("./assert/play-store2x.png");
   background-size: 54px 54px;
   background-position: left top;
   background-repeat: no-repeat;
 }
 .awards-google {
   margin-right: 39px;
-  background-image: url("./assert/play-store2x.png");
+  background-image: url("../assert/play-store2x.png");
 }
 
 .awards-apple {
-  background-image: url("./assert/badge-apple4x.png");
+  background-image: url("../assert/badge-apple4x.png");
 }
 
 @keyframes fadeInUp {
