@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 프로젝트 실행 방법
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 실행 환경
 
-## Available Scripts
+- nodejs: 16.15.1
+- npm: 8.11.0
+- 웹 브라우저: chrome 103.0.5060.53
 
-In the project directory, you can run:
+## 설치
 
-### `yarn start`
+- yarn 설치
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+npm install -g yarn@1.22.19
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 패키지 설치
 
-### `yarn test`
+```sh
+yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 실행
 
-### `yarn build`
+`yarn start`실행 후, 웹 브라우저에서 localhost:3000로 실행 결과물을 확인
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+최종 스크린샷
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 사용한 기술과 선택한 이유
 
-### `yarn eject`
+> CRA(create-react-app) : 가장 빠르게 react 환경을 구축할 수 있음
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 프로젝트 구조
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- component : 반복되는 요소 분리하여 구성
+- page : components 등 조합하여 구성
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+├── public
+├── src
+│   ├── assert
+│   ├── components
+│   ├── page
+│   └── index.js
+├── .gitignore
+├── .stylelintrc
+├── eslintrc.js
+├── package.json
+├── prettierrc
+├── README.md
+└── yarn.lock
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 영역별 등장 애니메이션
 
-## Learn More
+- css animation 이용하여 opacity와 translateY 값을 조정
+- animation-delay 를 통해 순차 등장 애니메이션 구현
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 숫자가 올라가는 애니메이션
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- useEffect 를 활용하여 render 후 숫자가 올라가는 애니메이션 구현
+- setInterval과 미리 선언한 percent 배열을 통해 숫자 증가
