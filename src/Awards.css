@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* awards */
+.awards {
+  color: rgb(58, 58, 58);
+  letter-spacing: -0.01em;
+  background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.awards-title {
+  width: 400px;
+  padding-top: 280px;
+  margin-right: 223px;
+  background-image: url("./assert/triple2x.png");
+  background-size: 400px 338px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  animation: fadeInUp 700ms;
+}
+.awards-title p {
+  height: 58px;
+  color: rgb(58, 58, 58, 0.8);
+  text-align: center;
+}
+.awards-amount {
+  animation: fadeInUp 700ms;
+  animation-delay: 100ms;
+}
+.awards-amount p {
+  font-size: 36px;
+  margin-top: 10px;
+  letter-spacing: -0.05em;
+}
+.awards-amount p:first-child {
+  margin-top: 0;
+}
+.awards-content {
+  display: flex;
+  margin-top: 60px;
+  animation: fadeInUp 700ms;
+  animation-delay: 200ms;
+}
+
+.awards-type {
+  padding: 5px 0 5px 62px;
+  font-size: 14px;
+  line-height: 22px;
+  display: inline-block;
+  color: rgb(58, 58, 58, 0.8);
+  font-weight: 600;
+  background-image: url("./assert/play-store2x.png");
+  background-size: 54px 54px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.awards-google {
+  margin-right: 39px;
+  background-image: url("./assert/play-store2x.png");
+}
+
+.awards-apple {
+  background-image: url("./assert/badge-apple4x.png");
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
